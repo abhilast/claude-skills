@@ -12,6 +12,12 @@ Generate comprehensive ARCHITECTURE.md files following rust-analyzer/matklad con
 
 **Use when:** Creating architecture docs, onboarding contributors, understanding codebases
 
+### [one-p-learning](./skills/one-p-learning/)
+
+Teach any topic through first principles decomposition — bottom-up, interactive, with adaptive quizzes.
+
+**Use when:** Learning new topics, explaining from first principles, building deep understanding of any subject
+
 ## Quick Start
 
 ```bash
