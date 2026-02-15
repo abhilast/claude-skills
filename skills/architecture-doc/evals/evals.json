@@ -1,0 +1,59 @@
+[
+  {
+    "prompt": "Generate an ARCHITECTURE.md for a typical web application with a React frontend, Node.js/Express backend, and PostgreSQL database. The app is an e-commerce platform with user authentication, product catalog, shopping cart, and order management.",
+    "expectations": [
+      "Document includes a bird's eye overview of the e-commerce problem",
+      "Codemap clearly separates frontend, backend, and database layers",
+      "At least one architectural invariant is documented (e.g., frontend never directly accesses database)",
+      "Boundaries between API layer and business logic are identified",
+      "Cross-cutting concerns like authentication and error handling are covered",
+      "Document is concise (500-1500 words)",
+      "No implementation details about how components work internally"
+    ]
+  },
+  {
+    "prompt": "Create ARCHITECTURE.md documentation for a microservices architecture with 5 services: API Gateway, User Service, Product Service, Order Service, and Payment Service. Services communicate via REST APIs and message queues.",
+    "expectations": [
+      "Overview explains the microservices approach and problem being solved",
+      "Each service is documented with its responsibility",
+      "Service boundaries and communication patterns are clearly described",
+      "Architectural invariants include service isolation rules",
+      "Cross-cutting concerns cover inter-service communication patterns",
+      "Document mentions message queue boundaries but doesn't explain implementation"
+    ]
+  },
+  {
+    "prompt": "Generate architecture documentation for a CLI tool written in Rust that processes log files, analyzes patterns, and generates reports. It has modules for parsing, analysis, and output formatting.",
+    "expectations": [
+      "Bird's eye overview describes the log analysis problem",
+      "Codemap organizes modules hierarchically (parser, analyzer, formatter)",
+      "Key types are named but not linked (e.g., 'The LogEntry struct')",
+      "At least one dependency invariant (e.g., 'parser never imports from analyzer')",
+      "Cross-cutting concerns include error handling and CLI argument parsing",
+      "Uses Rust-appropriate terminology and structure",
+      "Follows rust-analyzer style conventions"
+    ]
+  },
+  {
+    "prompt": "Document the architecture of a real-time collaboration platform like Google Docs, with features for document editing, presence awareness, conflict resolution, and persistence.",
+    "expectations": [
+      "Overview explains real-time collaboration challenges",
+      "Codemap separates concerns: editor, sync engine, conflict resolution, persistence",
+      "Boundaries between synchronization layer and document model are identified",
+      "Architectural invariants include operational transformation constraints",
+      "Cross-cutting concerns cover real-time communication and state management",
+      "Document focuses on structure, not OT algorithm details"
+    ]
+  },
+  {
+    "prompt": "Create ARCHITECTURE.md for a machine learning pipeline that ingests data, trains models, evaluates performance, and deploys to production. Include data preprocessing, feature engineering, model training, and serving components.",
+    "expectations": [
+      "Overview describes the ML pipeline problem and goals",
+      "Codemap organizes pipeline stages logically",
+      "Boundaries between training and serving environments are explicit",
+      "Architectural invariants include data flow constraints",
+      "Cross-cutting concerns cover data versioning and model monitoring",
+      "Document avoids ML algorithm details, focuses on system structure"
+    ]
+  }
+]
