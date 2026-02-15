@@ -1,0 +1,61 @@
+[
+  {
+    "prompt": "Teach me Bitcoin from first principles. I have no background in cryptography or distributed systems.",
+    "expectations": [
+      "Starts with a foundational problem like trust or double-spending, not 'Bitcoin is a cryptocurrency'",
+      "Presents a numbered section roadmap with ~12-15 sections",
+      "Uses [Section X/~N] progress indicator format",
+      "First section teaches a grounding concept like digital signatures or hashing before mentioning Bitcoin",
+      "Includes a hook question at the end of the quiz that requires the next section to answer",
+      "Waits for the user to respond to quiz questions before advancing",
+      "Uses concrete examples with specific values, not abstract placeholders"
+    ]
+  },
+  {
+    "prompt": "Explain HTTP from first principles. I already know what URLs are and I've used curl before.",
+    "expectations": [
+      "Acknowledges the user's existing knowledge of URLs and curl",
+      "Adjusts the starting point to skip basic URL/request concepts",
+      "Still starts with a grounding question or felt-need scenario",
+      "Uses ASCII diagrams to illustrate request/response flow or headers",
+      "Section count is in the 8-12 range for a medium-complexity topic",
+      "Mental model one-liners are bolded and vivid",
+      "Does not re-explain what URLs or curl are"
+    ]
+  },
+  {
+    "prompt": "Teach me C pointers from scratch. I know basic C syntax (variables, loops, functions).",
+    "expectations": [
+      "Starts with memory as the foundational concept, not pointer syntax",
+      "Uses concrete memory addresses like 0x1000 and specific values in examples",
+      "Section count is in the 5-8 range for a simpler topic",
+      "Includes ASCII diagrams showing memory layout with addresses and values",
+      "Grounding question makes the learner feel why they need pointers before teaching syntax",
+      "Quiz questions are application-based (predict output, find the flaw), not recall"
+    ]
+  },
+  {
+    "prompt": "I want to learn music theory. I play guitar casually but don't know any theory.",
+    "expectations": [
+      "Starts with sound, frequency, or vibration — not scales or note names",
+      "Applies the same first-principles method as technical topics",
+      "Uses the guitar as a reference instrument for concrete examples",
+      "Section roadmap is presented with ~8-12 sections",
+      "Includes a calibration question to gauge what the user already knows intuitively",
+      "Mental models use physical/auditory analogies, not abstract music notation",
+      "Hook questions connect physical concepts (string vibration) to theory concepts (intervals, scales)"
+    ]
+  },
+  {
+    "prompt": "Teach me Kubernetes. I already understand Docker containers and basic networking (TCP/IP, DNS). Skip those parts.",
+    "expectations": [
+      "Explicitly respects the skip request for Docker and networking",
+      "Names the skipped concepts and confirms they won't be re-taught",
+      "Starts at an appropriate level that builds on container and networking knowledge",
+      "Opens with a grounding problem like 'you have 100 containers to manage, now what?'",
+      "Section count reflects medium-to-complex range (10-15 sections)",
+      "References Docker and networking concepts naturally without re-explaining them",
+      "Provides a roadmap that starts from orchestration need, not from 'what is a container'"
+    ]
+  }
+]

@@ -17,6 +17,7 @@ Note: `~/.claude/skills/` may also contain skills from other sources (e.g., skil
 ## Currently Available Skills
 
 - **architecture-doc** — Generates ARCHITECTURE.md files following rust-analyzer/matklad conventions. Produces: bird's eye overview, code map, architectural invariants, boundaries, cross-cutting concerns. Target length: 500-1500 words.
+- **one-p-learning** — Teaches any topic through first principles decomposition. Dynamic sections, interactive quizzes, adaptive re-explanation.
 
 ## Key Commands
 
